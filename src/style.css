@@ -4,7 +4,7 @@
   font-style: normal;
 }
 body {
-  background-color: rgb(233, 230, 230);
+  background-color: rgb(200, 238, 243);
 }
 header {
   border-bottom: 1px solid rgb(233, 230, 230);
@@ -12,7 +12,7 @@ header {
 }
 .weather-project {
   background-color: whitesmoke;
-  margin: 30px auto;
+  margin: 100px auto;
   padding: 30px;
   max-width: 600px;
   border-radius: 15px;
@@ -45,6 +45,7 @@ main {
   padding: 0;
   font-size: 40px;
   line-height: 45px;
+  color: cornflowerblue;
 }
 .current-details {
   font-size: 15px;
@@ -52,12 +53,13 @@ main {
   line-height: 20px;
 }
 .current-details span {
-  color: palevioletred;
+  color: cornflowerblue;
   font-weight: bold;
 }
 .current-degree {
   display: flex;
   padding-top: 30px;
+  color: cornflowerblue;
 }
 .current-degree-icon {
   margin-top: 15px;
