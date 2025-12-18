@@ -6,6 +6,10 @@
 body {
   background-color: rgb(233, 230, 230);
 }
+header {
+  border-bottom: 1px solid rgb(233, 230, 230);
+  padding: 0 0 30px 0;
+}
 .weather-project {
   background-color: whitesmoke;
   margin: 30px auto;
@@ -13,4 +17,68 @@ body {
   max-width: 600px;
   border-radius: 15px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+}
+.search-form-input {
+  background-color: rgb(233, 230, 230);
+  width: 70%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.search-form-button {
+  background: cornflowerblue;
+  color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-size: 15px;
+}
+.current-data {
+  display: flex;
+  justify-content: space-between;
+}
+main {
+  padding: 20px 0;
+}
+.current-city {
+  padding: 0;
+  font-size: 40px;
+  line-height: 45px;
+}
+.current-details {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 20px;
+}
+.current-details span {
+  color: palevioletred;
+  font-weight: bold;
+}
+.current-degree {
+  display: flex;
+  padding-top: 30px;
+}
+.current-degree-icon {
+  margin-top: 15px;
+  font-size: 30px;
+}
+.current-degree-number {
+  font-size: 60px;
+  font-weight: bold;
+  margin-left: 10pxs;
+}
+.current-degree-unit {
+  margin-top: 10px;
+  font-size: 20px;
+}
+footer {
+  border-top: 1px solid rgb(233, 230, 230);
+  padding: 30px 0 0 0;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+a {
+  color: cornflowerblue;
 }
