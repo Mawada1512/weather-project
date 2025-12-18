@@ -31,13 +31,20 @@
           <div class="current-city-data">
             <h1 class="current-city" id="current-city"></h1>
             <p class="current-details">
-              Sunday 10:11, scatted clouds
+              <span id="time"></span>, <span id="description"></span>
               <br />
-              Humedity: <span> 60%</span>, Wind <span>17km/h</span>
+              Humedity: <span class="humedity" id="humedity"> </span>, Wind
+              <span class="humedity" id="wind"></span>
             </p>
           </div>
           <div class="current-degree">
-            <div class="current-degree-icon">⛅</div>
+            <div id="current-degree-icon">
+              <!-- <img
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-night.png"
+              alt=""
+              class="current-degree-icon"
+           /> -->
+            </div>
             <div class="current-degree-number" id="temp"></div>
             <div class="current-degree-unit">°C</div>
           </div>
