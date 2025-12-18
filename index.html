@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Patrick+Hand+SC&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="weather-project">
@@ -28,7 +29,7 @@
       <main>
         <div class="current-data">
           <div class="current-city-data">
-            <h1 class="current-city" id="current-city">paris</h1>
+            <h1 class="current-city" id="current-city"></h1>
             <p class="current-details">
               Sunday 10:11, scatted clouds
               <br />
@@ -37,7 +38,7 @@
           </div>
           <div class="current-degree">
             <div class="current-degree-icon">⛅</div>
-            <div class="current-degree-number">12</div>
+            <div class="current-degree-number" id="temp"></div>
             <div class="current-degree-unit">°C</div>
           </div>
         </div>
