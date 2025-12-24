@@ -49,7 +49,26 @@ function formatDate(dota) {
   }
   return `${day} ${hours}:${minutes}`;
 }
+function displayForcast() {
+  let forcast = document.querySelector("#forcast");
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun", "Mon"];
+  let forcastHtml = "";
+  days.forEach(function (day) {
+    forcastHtml =
+      forcastHtml +
+      `<div class="weather-forcast-day">
+            <div class="weather-forcast-date">${day}</div>
+            <div class="weather-forcast-icon">⛅</div>
+            <div class="weather-forcast-temp">
+              <div class="degree"><strong>18°</strong></div>
+              <div class="degree">12°</div>
+            </div>
+          </div>`;
+  });
+  forcast.innerHTML = forcastHtml;
+}
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", Search);
 searchCity("paris");
+displayForcast();
