@@ -27,6 +27,7 @@ function engineData(response) {
       src="${response.data.condition.icon_url}"
       class="current-degree-icon"
     />`;
+  getForcast(response.data.city);
 }
 function formatDate(dota) {
   let minutes = dota.getMinutes();
@@ -49,7 +50,14 @@ function formatDate(dota) {
   }
   return `${day} ${hours}:${minutes}`;
 }
-function displayForcast() {
+
+function getForcast(city) {
+  let kay = "6fftdd01472a035eo394f08abdd05bea";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${key}`;
+  axios.get(apiUrl).then(displayForcast);
+}
+
+function displayForcast(response) {
   let forcast = document.querySelector("#forcast");
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun", "Mon"];
   let forcastHtml = "";
@@ -71,4 +79,4 @@ function displayForcast() {
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", Search);
 searchCity("paris");
-displayForcast();
+getForcast("paris");
